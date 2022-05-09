@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,400;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white:hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+body{
+    background-color: var(--Very-Dark-Blue);  
+    font-family: 'Overpass', sans-serif;
+}
+
+.main{
+   background-color: var(--Dark-Blue);
+   height: 55vh;
+   width: 25vw;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%); 
+   border-radius: 10px;
+}
+
+.main.deactive{
+    display: none;
+}
+
+.main_numbers{
+    display: flex;
+    justify-content: space-around;
+}
+
+.numbtn{
+    background-color:  var(--Very-Dark-Blue);
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    color: var(--Light-Grey);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* .numbtn:focus{
+    background-color: hsl(217, 12%, 63%);
+} */
+.numbtn:hover{
+    background-color: var(--orange);
+}
+
+.main img{
+    margin: 15px;  
+}
+
+.image_wrapper{
+    background-color:   var(--Very-Dark-Blue);
+    border-radius: 50%;
+    width: fit-content;
+    position: relative;
+    left: 15px;
+    top: 20px;  
+}
+
+.main h3{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color:  var(--white);
+}
+
+.main p{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    color: var(--Light-Grey);
+}
+
+.submitbtn{
+    background-color: var(--orange);
+    border: none;
+    margin: 20px;
+    width: 85%;
+    padding: 10px;
+    border-radius:20px;
+    text-transform: uppercase;
+    color:  var(--white);
+    cursor: pointer;
+}
+
+.submitbtn:hover{
+    background-color: var(--white);
+    color:var(--orange);
+}
+
+
+
+
+
+/* DESIGN FOR DESKTOP VIEW */
+@media (min-width:768px) and (max-width:1440px){
+    .main{
+        height:55vh;
+    }
+}
+
+
+
+/* DESIGN FOR THE MOBILE VIEW */
+@media  (min-width:375px) and (max-width:480px) {
+   .main{
+       width: 90vw;
+       height: 52.5vh;
+   }
+}
+
+
+/* THANK YOU STATE STARTS HERE */
+.submain{
+    background-color:  hsl(213, 19%, 18%);
+    height: 55vh;
+    width: 25vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.submain.active{
+    visibility: visible;
+}
+
+.thankyou_image{
+   display: block;
+   margin-top: 15px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#rating_result{
+    color: hsl(25, 97%, 53%);  /* orange */
+    background-color:  hsl(216, 12%, 8%);
+    text-align: center;
+    border-radius: 20px;
+    width: 15vw;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.text1{
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    margin-top: 15px;
+}
+
+.text2{
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+    margin-top: 15px;
+}
+
+/* DESIGN FOR DESKTOP VIEW OF THANK YOU STATE*/
+@media (min-width:768px) and (max-width:1440px){
+    .submain{
+        height:55vh;
+    }
+}
+
+
+
+/* DESIGN FOR THE MOBILE VIEW OF THANK YOU STATE */
+@media  (min-width:375px) and (max-width:480px) {
+   .submain{
+       width: 90vw;
+       height: 52.5vh;
+   }
+
+   #rating_result{
+       width: 50vw;
+   }
+}
