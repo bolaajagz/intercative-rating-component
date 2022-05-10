@@ -110,17 +110,17 @@ body{
 /* DESIGN FOR DESKTOP VIEW */
 @media (min-width:768px) and (max-width:1440px){
     .main{
-        height:55vh;
+        height:350px;
     }
 }
 
 
 
 /* DESIGN FOR THE MOBILE VIEW */
-@media  (min-width:375px) and (max-width:480px) {
+@media  (max-width:480px) {
    .main{
        width: 90vw;
-       height: 52.5vh;
+       height: 350px;
    }
 }
 
@@ -176,7 +176,7 @@ body{
 /* DESIGN FOR DESKTOP VIEW OF THANK YOU STATE*/
 @media (min-width:768px) and (max-width:1440px){
     .submain{
-        height:55vh;
+        height:350px;
     }
 }
 
@@ -186,7 +186,7 @@ body{
 @media  (min-width:375px) and (max-width:480px) {
    .submain{
        width: 90vw;
-       height: 52.5vh;
+       height: 250px;
    }
 
    #rating_result{
